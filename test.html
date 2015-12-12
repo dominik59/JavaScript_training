@@ -33,6 +33,7 @@
 		*/
 		/*
 			podstawowe funkcje:
+				<br> - nowa linia w html
 				alert() - pobiera argument i wyswietla w komunikacie
 				var x1 = 5e2; - 5 z 2 zerami
 				var x1 = 5e-2; - 5 na w miejscu po przecinku
@@ -83,18 +84,27 @@
 		x1="String example";
 		if(x1=="String example")
 			{
-			//document.write("Zgadza sie");
+			document.write("Zgadza sie<br>");
 			}
 		else
 			{
-			//document.write("Nie zgadza siê");
+			document.write("Nie zgadza siê<br>");
 			}
 		//alert(x1);
 		
+		if(11=="11")
+			{
+			document.write("11 == \"11\"<br>");
+			}
+		if(11!=="11")
+			{
+			document.write("oraz 11 !== \"11\"<br>");
+			}
 		</script>
 	</head>
 	<body>
 	<h1 id="demo">Hello</h1>
+	<h1 id="suma">Hello</h1>
 		<script type="text/javascript">
 			/*
 			function nazwa funkcji(parametr1, parametr2)
@@ -106,7 +116,12 @@
 			{
 				document.getElementById("demo").innerHTML = "Hello world";
 			}
-			//printMessage();
+			printMessage();
+			function sumuj(x1,x2)
+			{
+				return x1+x2;
+			}
+			document.getElementById("suma").innerHTML = sumuj(10,20);
 		</script>
 	</body>
 </html>

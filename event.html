@@ -1,0 +1,24 @@
+<html>
+	<body onload="fct()"> <!-- Przy za³adowaniu strony zostanie odpalona funkcja w javascripcie -->
+	<button onclick="alert('Hello World')">Przycisk</button> <!-- tu tworzê przycisk który uruchomi (przy naciœniêciu) powiadomienie o treœci Hello World !!ARGUMENTY OPATRUJEMY APOSTROFAMI NIE CUDZYS£OWAMI!!//-->
+	<!--on click mo¿na zast¹piæ przez onchange, onmouseover, onmouseuseout, onkeydown, onload -->												
+	<button onmouseover="document.getElementById('h1').innerHTML = Date()">Przycisk na który wystarczy najechaæ</button>
+	<button onmouseleave="fct ()">Przycisk który aktywuje funkcjê w javascript, przy zjechaniu z niego myszk¹</button>
+	<button onclick="this.innerHTML='Zmieniona nazwa'">Ten przycisk przy naciêniêciu zmieni swoj¹ nazwê</button>
+	<input id="txt1" type="text" onkeyup="fct1()">
+	<h1 id="h1"></h1>											
+		<script type="text/javascript">
+		
+			function fct ()
+			{
+				document.getElementById("h1").innerHTML="W³aœnie zjecha³eœ myszk¹ z przycisku";
+			}
+			function fct1 ()
+			{
+				//alert(document.getElementById("txt1").innerHTML);
+				document.getElementById("h1").innerHTML=document.getElementById("txt1").value;//.value - metoda pobierania wartoœci wpisaej w pole tekstowe
+			}
+			
+		</script>
+	</body>
+</html>
