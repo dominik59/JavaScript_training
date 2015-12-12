@@ -1,0 +1,13 @@
+<html>
+	<head></head>
+	<body>
+	<h1 id="miejsce_docelowe"></h1> <!--W tym miejscu ustawiam identyfikator dla nag³ówka h1 -->
+		<script type="text/javascript">
+			document.getElementById("miejsce_docelowe").innerHTML = "Czesc";//w tym miejscu nastêpuje odwo³anie do elementu w ciele strony o identyfikatorze "element docelowy"
+			//nastepnie za pomoc¹ w³ascoœci .innerHTML ustawiamy tekst elementu o w/w identyfikatorze
+			var x1=document.getElementById("miejsce_docelowe").innerHTML;// w tym miejscu odwo³ujemy siê do elementu o identyfikatorze "element docelowy"
+			//a nastêpnie za pomoc¹ w³asnoœci .innerHTML otrzymujemy String zawieraj¹cy zawartoœæ obiektu o w/w identyfikatorze
+			alert(x1); // wypisujemy na ekran ¿¹dany string
+		</script>
+	</body>
+</html>

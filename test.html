@@ -1,24 +1,25 @@
+
 <html>
+
 	<head>
 		<title>My First HTML test page</title>
 		<script type="text/javascript">
-		document.write("<h1>Hello World</h1>");
-		
+		//document.write("<h1>Hello World</h1>");
 		//sposób na komentowanie
 		/*oraz tradycyjnie*/
 		/*
 			deklarowanie zmiennych:
-				zmienna = 1
-				Zmienna = 2
-				$zmienna = 3
-				$Zmnienna = 4
-				_zmienna = 5
-				_Zmienna
-				x1
+				var zmienna = 1
+				var Zmienna = 2
+				var $zmienna = 3
+				var $Zmnienna = 4
+				var _zmienna = 5
+				var _Zmienna = 5
+				var x1 = 5
 			z³a deklaracja:
-				1
-				var -zastrze¿one
-				function -zastrze¿one
+				var 1x = 5
+				var var = 5 -zastrze¿one
+				var function = 5 -zastrze¿one
 		*/
 		/*
 			debugowanie np poprzez wpisywanie
@@ -27,10 +28,85 @@
 			nastêpnie inspect element
 			nastêpnie console
 		*/
+		/*
+			typy danych: String, Number, Boolean, Array, Object
+		*/
+		/*
+			podstawowe funkcje:
+				alert() - pobiera argument i wyswietla w komunikacie
+				var x1 = 5e2; - 5 z 2 zerami
+				var x1 = 5e-2; - 5 na w miejscu po przecinku
+				alert(typeof x1); - zwróci typ zmiennej x1
+				document.write();- funkcja wypisujaca ró¿ne rzeczy na stronie(automatycznie wstawia znak nowej linii)
+		*/
+		/*
+		if(warunek)
+			{
+			
+			}
+		else
+			{
+			
+			}
+		if(warunek)
+			{
+			
+			}
+		else if(warunek)
+			{
+				
+			}
+			else
+				{
+				
+				}
+			=== - sprawdza czy równa wartoœæ i typ
+			!== - sprawdza czy ró¿na wartoœæ lub ró¿ny typ
+			
+			== - równa siê
+			!= - nie równa siê
+			>= - wiêksze lub równe
+			<= - mniejsze lub równe
+			>  - wiêksze
+			<  - mniejsze
+			
+			!!WA¯NE PRZYK£AD
+			var x1 = 5;
+			if (x1 ==5) -zwróci prawdê
+			if (x1 =="5") - zwróci prawdê b osprawdza wartoœæ a nie typ
+			if (x1 ==="5") - zwróci fa³sz bo watoœæ siê zgadza ale typ jest inny
+			
+		*/
+		
+		var x1=2e-3;
+		//alert(x1);
+		x1="String example";
+		if(x1=="String example")
+			{
+			//document.write("Zgadza sie");
+			}
+		else
+			{
+			//document.write("Nie zgadza siê");
+			}
+		//alert(x1);
 		
 		</script>
 	</head>
 	<body>
-		
+	<h1 id="demo">Hello</h1>
+		<script type="text/javascript">
+			/*
+			function nazwa funkcji(parametr1, parametr2)
+			{
+				cia³o funkcji
+			}
+			*/
+			function printMessage()
+			{
+				document.getElementById("demo").innerHTML = "Hello world";
+			}
+			//printMessage();
+		</script>
 	</body>
 </html>
