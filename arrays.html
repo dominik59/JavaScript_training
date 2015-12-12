@@ -1,0 +1,41 @@
+<html>
+	<body>
+		<h1 id="h1"></h1>
+		<h1 id="h1_1"></h1>
+		<h1 id="h1_2"></h1>
+		<h1 id="h1_3"></h1>
+		<h1 id="h1_4"></h1>
+		<h1 id="h1_5"></h1>
+		<h1 id="h1_6"></h1>
+		<h1 id="h1_7"></h1>
+		<h1 id="h1_8"></h1>
+		<script type="text/javascript">
+			/*
+				tablice deklarujemy w nastêpuj¹cy sposób:
+					var nazwa=[];
+					lub
+					var nazwa=new Array();
+				je¿eli chcemy daæ tam jakieœ elementy to:
+					var nazwa=["pierwszy","drugi","trzeci","..."];
+					lub
+					var nazwa=new Array("pierwszy","drugi","trzeci","...");
+			*/
+			var names=["timon","pumba","lion"]; //tworzê tablicê z trzema elementami
+			document.getElementById("h1").innerHTML=names;//wypisujê j¹ na stronie
+			document.getElementById("h1_1").innerHTML=names[0]; // wypisujê pierwszy element
+			names[0]="czupakabra"; // zmieniam pierwszy element
+			document.getElementById("h1_2").innerHTML=names;
+			names.push("dodatkoweImie"); // dodawanie do tablicy
+			document.getElementById("h1_3").innerHTML=names;
+			alert(names.length); //wypisze w okienku liczbê elementów w tablicy
+			document.getElementById("h1_4").innerHTML=names.sort(); //wypisanie posortowanych elementów
+			document.getElementById("h1_5").innerHTML=names;		//wypisanie posortowanych elementów poniea¿ .sort() zmienia porz¹dek tablicy Ÿród³owej
+			names[4]="Stefan";//dodawanie do tablicy mo¿e siê odbyæ te¿ w taki sposób
+			document.getElementById("h1_5").innerHTML=names;
+			document.getElementById("h1_6").innerHTML=names.pop();//pop œci¹ga i zwraca ostatni element z tablicy
+			document.getElementById("h1_7").innerHTML=names.shift();//shift œci¹ga i zwraca pierwszy element z tablicy
+			names.unshift("dodany_element_na_pierwsz¹_pozycjê");//unshift dodaje element na pierwsz¹ pozycjê
+			document.getElementById("h1_8").innerHTML=names;
+		</script>
+	</body>
+</html>
