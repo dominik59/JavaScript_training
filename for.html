@@ -1,0 +1,20 @@
+<html>
+	<body>
+	<h1 id="h1"></h1>
+		<script type="text/javascript">
+			var str="";
+			for(a=0;a<10;a++)
+				{
+				str+=a+"<br>";
+				}
+			document.getElementById("h1").innerHTML=str;
+			
+			var obj={imie:"Michal",nazwisko:" Kicha³ ",czynnoœæ:" do kapuchy"};//pierwszy obiekt
+			
+			for(x in obj)
+				{
+				document.getElementById("h1").innerHTML+=obj[x];//iteracja po obiekcie i wypisywanie zawartoœci
+				}
+		</script>
+	</body>
+</html>

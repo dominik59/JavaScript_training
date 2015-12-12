@@ -1,0 +1,24 @@
+<html>
+	<body>
+	<h1 id="h1"></h1>
+	<h1 id="h2"></h1>
+	<h1 id="h3"></h1>
+	<h1 id="h4"></h1>
+	<h1 id="h5"></h1>
+		<script type="text/javascript">
+			var i=1;
+			while(i<6)
+				{
+				document.getElementById("h"+i).innerHTML=i; //wpisuje dynamicznie cyferki
+				i++;
+				}
+			i=1;
+			do
+				{
+				document.getElementById("h"+i).innerHTML=document.getElementById("h"+i).innerHTML+" Gitara " + i; // dodaje dynamicznie tekst do poszczególnych kontenerów
+				document.getElementById("h"+i).innerHTML+=" gj"; //robi dok³adnie to co powy¿ej tylko w skróconej wersji
+				i++;
+				}while(i<6);
+		</script>
+	</body>
+</html>
